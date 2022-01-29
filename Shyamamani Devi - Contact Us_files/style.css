@@ -1,0 +1,68 @@
+#contact {
+	padding:20px 0;
+}
+.input-80 {
+	max-width: 93%;
+	width: 85%;
+}
+#formResponse {
+	font-weight: bold;
+	background-color: #FCF8E3;
+	border-radius: 5px;
+	padding: 10px;
+	color: #5C441B;
+}
+.formUnfilled {
+	display: none;
+}
+label.error {
+  color: red;
+  padding: 2px 0;
+  margin-top: 2px;
+  margin-bottom: -10px;
+}
+.warning {
+	color: red;
+}
+/* Manual Code  */
+.form-horizontal .control-label {
+	width: 18%;
+	max-width: 50%;
+	text-align: left;
+}
+.form-horizontal .controls {
+	margin-left: 60px;
+}
+input[type="text"]{
+	height: 25px;
+}
+input[type="email"]{
+	height: 25px;
+}
+select{
+	height: 35px;
+}
+textarea {
+	height: 120px;
+}
+/*
+     FILE ARCHIVED ON 16:27:30 Aug 12, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:41:54 Jan 29, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 191.394
+  exclusion.robots: 0.151
+  exclusion.robots.policy: 0.14
+  RedisCDXSource: 1.823
+  esindex: 0.011
+  LoadShardBlock: 163.109 (3)
+  PetaboxLoader3.resolve: 156.135 (4)
+  PetaboxLoader3.datanode: 116.817 (5)
+  CDXLines.iter: 23.608 (3)
+  load_resource: 157.956 (2)
+*/

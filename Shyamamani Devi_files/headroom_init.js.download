@@ -1,0 +1,81 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+((function(global, $, Headroom){
+
+    var FixedHeader = {
+        init: function(){
+            var header = $('rt-header-surround');
+            if (!header) return;
+            FixedHeader.headroom = new Headroom($('rt-header-surround'), {
+                "tolerance": 5,
+                "offset":    120,
+                "classes": {
+                    "initial":  "animated",
+                    "pinned":   "slideDown",
+                    "unpinned": "slideUp"
+                }
+            });
+
+            if ('matchMedia' in window){
+                var MQL = window.matchMedia('(max-width: 767px)');
+                MQL.addListener(FixedHeader.mediaQuery);
+                FixedHeader.mediaQuery(MQL);
+            } else {
+                FixedHeader.start();
+            }
+        },
+
+        start: function(){
+            FixedHeader.headroom.init();
+        },
+
+        stop: function(){
+            FixedHeader.headroom.destroy();
+        },
+
+        mediaQuery: function(mql){
+            FixedHeader[mql.matches ? 'stop' : 'start']();
+        }
+    };
+
+    global.FixedHeader = FixedHeader;
+
+    global.addEvent('domready', function(){
+        FixedHeader.init();
+    });
+
+})(window, document.id, Headroom));
+
+
+}
+/*
+     FILE ARCHIVED ON 13:35:07 Aug 26, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:36:26 Jan 29, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 158.227
+  exclusion.robots: 0.07
+  exclusion.robots.policy: 0.064
+  cdx.remote: 0.043
+  esindex: 0.006
+  LoadShardBlock: 132.342 (3)
+  PetaboxLoader3.datanode: 276.465 (5)
+  CDXLines.iter: 14.368 (3)
+  load_resource: 273.403 (2)
+  PetaboxLoader3.resolve: 83.489 (2)
+*/
